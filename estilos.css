@@ -1,0 +1,284 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-image: url(https://cdn.discordapp.com/attachments/1108182671177302016/1146207796073873498/FONDO_COLOR_INSONORA.png);
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: 'Roboto', sans-serif;
+        overflow-x: hidden;
+        transition: all 1s ease;
+        background-repeat: no-repeat;
+
+
+    }
+
+    menu {
+
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem;
+        margin-left: 0.5rem;
+
+
+
+    }
+
+    a {
+        text-decoration: none;
+        color: grey;
+    }
+
+
+    .menu-desplegable {
+        display: flex;
+        width: 7rem;
+        gap: .4rem;
+        height: 7rem;
+        flex-direction: column;
+        font-family: 'Roboto', sans-serif;
+        font-size: medium;
+        margin-top: 1rem;
+        list-style: none;
+        transform: scale(0);
+        transition: all 0.4s ease;
+        position: absolute;
+        margin-left: -2.8rem;
+
+    }
+
+    .visible {
+        transform: scale(1);
+        transition: all 0.4s ease;
+    }
+
+
+
+    .logo-insonora {
+        height: 3rem;
+        width: 6rem;
+        user-select: none;
+        margin-top: .5rem;
+        transition: all 1s ease;
+    }
+
+
+
+    .menu-barras {
+        width: 2rem;
+        height: 1rem;
+        cursor: pointer;
+        transform: scale(1.2);
+        margin-top: 1.2rem;
+        transform-origin: 0 100%;
+        margin-right: .9rem;
+
+
+    }
+
+    .menu-barras span {
+        display: block;
+        width: 100%;
+        height: .2rem;
+        margin-top: 0.5rem;
+        background-color: rgb(0, 0, 0);
+        transform-origin: 0rem 100%;
+
+        transition: all 500ms;
+
+    }
+
+    .activeline1__menu-barras {
+        transform: rotate(45deg) translate(-.2rem, .12rem);
+    }
+
+    .activeline2__menu-barras {
+        transform: rotate(-45deg) translate(-.49rem, .44rem);
+    }
+
+
+
+
+
+    main {
+        margin-top: 2rem;
+        gap: 2rem;
+        margin-left: 10rem;
+        padding: 2rem;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 28rem 28rem;
+        grid-template-rows: 10rem 10rem 10rem;
+        user-select: none;
+        transition: all .1s ease;
+    }
+
+
+    .sol {
+        height: 3rem;
+        width: 3rem;
+        margin-left: 72%;
+        margin-top: .2rem;
+        cursor: pointer;
+
+        transition: all 1s ease;
+
+
+    }
+
+
+
+    .sol:hover {
+        transform: scale(1.2);
+    }
+
+    .primer-titulo {
+        gap: 1.5rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .imagenes {
+        width: 20rem;
+        height: 16rem;
+        margin-top: -4rem;
+        padding: 1rem;
+        transition: all 1s ease;
+
+    }
+
+    .miniparlante {
+        width: 14rem;
+        height: 11rem;
+        margin-left: 1rem;
+        margin-top: 0rem;
+
+        padding: 1rem;
+    }
+
+    .primer-titulo p {
+        font-size: larger;
+        font-weight: 500;
+
+    }
+
+    .pregunta {
+        font-size: xx-large;
+    }
+
+    .pregunta3 {
+        margin-top: 3rem;
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+
+    .aula {
+        width: 18rem;
+        height: 15rem;
+
+
+        padding: 1rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    @media only screen and (max-width: 600px) {
+
+
+        main {
+
+            line-height: 1.4;
+            margin-top: 3rem;
+            margin-left: 1rem;
+            gap: 1.5rem;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 20rem;
+            grid-template-rows: 10rem 10rem 10rem 10rem 10rem 10rem;
+        }
+
+        .primer-titulo {
+            gap: 1.5rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            margin-bottom: 1rem;
+        }
+
+        .imagenes {
+            width: 19rem;
+            height: 16rem;
+            margin-left: .6rem;
+            padding: 1rem;
+
+
+        }
+
+        .sol {
+            height: 2.7rem;
+            width: 2.7rem;
+            margin-left: 30%;
+            margin-top: .3rem;
+            cursor: pointer;
+
+            transition: all 1s ease;
+
+
+        }
+
+
+
+        .sol:hover {
+            transform: scale(1.2);
+        }
+
+        .miniparlante {
+            width: 18rem;
+            height: 13rem;
+            margin-top: 3.5rem;
+            margin-left: 1.5rem;
+            padding: 1rem;
+
+        }
+
+        .primer-titulo p {
+            font-size: larger;
+            font-weight: 500;
+
+        }
+
+        .pregunta {
+            font-size: xx-large;
+
+        }
+
+        .pregunta3 {
+
+            margin-top: 6rem;
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+
+        .aula {
+            width: 20rem;
+            height: 15rem;
+            margin-top: 12rem;
+            margin-left: rem;
+            padding: 1rem;
+        }
+    }
